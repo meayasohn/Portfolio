@@ -12,3 +12,17 @@ document.addEventListener('scroll', ()=> {
     navbar.classList.remove('navbar--dark'); 
   }
 });
+
+//Scrolliong when menu is click
+const navbarMenu = document.querySelector('.navbar__menu');
+navbarMenu.addEventListener('click', ()=>{
+  const target = event.target;
+  const link = target.dataset.link;
+  if(link == null){
+    return;
+  }
+  console.log(event.target.dataset.link);
+
+  const strollTo = document.querySelector(link);
+  strollTo.scrollIntoView({behavior: "smooth"});
+});
