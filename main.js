@@ -47,8 +47,35 @@ console.log(home.style.opacity);
   }
 });
 
-document.addEventListener('click', ()=>{
+arrowUp.addEventListener('click', ()=>{
   scrollIntoView('#home');
+});
+
+
+const workCategory = document.querySelector('.work__categories');
+const workProjects = document.querySelector('.work__projects');
+const projectFilter = document.querySelectorAll('.project');
+workCategory.addEventListener('click', (event)=>{
+  const  filter = event.target.dataset.job || event.target.parentNode.dataset.job;
+
+  if(filter == null){
+    return;
+  }
+
+  // console.group();
+  workProjects.classList.add('anim-out');
+
+  setTimeout(() => {
+    projectFilter.forEach((project)=>{
+      if(filter==='*' || filter === project.dataset.job){
+        project.classList.remove('invisible');
+      }else{
+        project.classList.add('invisible');
+      }
+    });
+    workProjects.classList.remove('anim-out');
+  }, 300);
+  // console.groupEnd();
 });
 
 function scrollIntoView(selector){
