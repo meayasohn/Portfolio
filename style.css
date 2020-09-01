@@ -490,6 +490,27 @@ p{
   transition: all var(--animation-duration) ease-in;
 }
 
+.arrow__up {
+  position: fixed;
+  /* display: hidden; */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in;
+  bottom: 50px;
+  right: 50px;
+  font-size: var(--font-medium);
+  color : var(--color-white);
+  background-color: var(--color-dark-pink);
+  border-radius: 50%;
+}
+
+.arrow__up.visible{
+  /* display: block; */
+  /* visibility: visible; */
+  opacity: 1;
+  pointer-events: auto;
+}
+
 @media screen and (max-width: 768px){
   .navbar__toggle-btn{
     display: block;

@@ -33,8 +33,22 @@ contactmeBtn.addEventListener('click', (event) =>{
 // Home opacity change when scrolling is down
 const home = document.querySelector('#home');
 const scrollHeight = home.getBoundingClientRect().height;
+const arrowUp = document.querySelector('.arrow__up');
+
 document.addEventListener('scroll', ()=>{
-  home.style.opacity = 1 - window.scrollY/scrollHeight;
+home.style.opacity = 1 - window.scrollY/scrollHeight;
+
+console.log(home.style.opacity);
+
+  if(home.style.opacity <0){
+    arrowUp.classList.add('visible');
+  }else{
+    arrowUp.classList.remove('visible'); 
+  }
+});
+
+document.addEventListener('click', ()=>{
+  scrollIntoView('#home');
 });
 
 function scrollIntoView(selector){
