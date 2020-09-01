@@ -30,6 +30,13 @@ contactmeBtn.addEventListener('click', (event) =>{
   scrollIntoView('#contact');
 });
 
+// Home opacity change when scrolling is down
+const home = document.querySelector('#home');
+const scrollHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', ()=>{
+  home.style.opacity = 1 - window.scrollY/scrollHeight;
+});
+
 function scrollIntoView(selector){
   const strollTo = document.querySelector(selector);
   strollTo.scrollIntoView({behavior: "smooth"});
