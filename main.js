@@ -55,12 +55,19 @@ arrowUp.addEventListener('click', ()=>{
 const workCategory = document.querySelector('.work__categories');
 const workProjects = document.querySelector('.work__projects');
 const projectFilter = document.querySelectorAll('.project');
+const categoryBtn = document.querySelectorAll('category__btn');
 workCategory.addEventListener('click', (event)=>{
   const  filter = event.target.dataset.job || event.target.parentNode.dataset.job;
 
   if(filter == null){
     return;
   }
+
+  // Button Select mark change
+  const active = document.querySelector('.category__btn.selected');
+  active.classList.remove('selected');
+  const target = event.target.nodeName === 'BUTTON' ? event.target : event.target.parentNode;
+  target.classList.add('selected');
 
   // console.group();
   workProjects.classList.add('anim-out');
