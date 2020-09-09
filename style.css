@@ -183,6 +183,10 @@ p{
   border-radius: var(--size-border-radius);
 }
 
+.home__contact:hover {
+  background-color: orange;
+}
+
 /* About */
 
 .section{
@@ -194,6 +198,7 @@ p{
 .section__container{
   max-width: 1200px;
   justify-content: center;
+  margin: auto;
 }
 
 .about__majors{
@@ -277,7 +282,7 @@ p{
 }
 
 .skillset__title{
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 
 .skill__description{
