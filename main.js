@@ -25,6 +25,13 @@ navbarMenu.addEventListener('click', ()=>{
   scrollIntoView(link);
 });
 
+// Navbar toogle for mininum screen
+const navbarToogleBtn = document.querySelector('navbar__toggle-btn');
+navbarToogleBtn.addEventListener('click', ()=>{
+  navbarMenu.classList.toggle('open');
+});
+
+
 const contactmeBtn = document.querySelector('.home__contact');
 contactmeBtn.addEventListener('click', (event) =>{
   scrollIntoView('#contact');
