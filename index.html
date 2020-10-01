@@ -1,330 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Meaya's Portpolio</title>
-    <meta name="description" content="Learn jungbub word in English"/>
-    <meta name='author' content="Meaya">
-    <link rel="icon" type="image/png" href="imgs/favicon.png"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meaya(Miae SOHN)'s Portpolio</title>
+    <meta name="description" content="Learn jungbub word in English" />
+    <meta name="author" content="Meaya" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!--Navbar  -->
     <nav id="navbar">
-        <div class="navbar__logo">
-            <i class="far fa-address-book"></i>
-            <a href="#">Meaya</a>
-        </div>
-        <div clase="navbar__menu__block" >
-            <ul class="navbar__menu open">
-                <li class="navbar_menu__item" data-link="#home">Home</li>
-                <li class="navbar_menu__item" data-link="#about">About</li>
-                <li class="navbar_menu__item" data-link="#skill">Skill</li>
-                <li class="navbar_menu__item" data-link="#work">Work</li>
-                <li class="navbar_menu__item" data-link="#testimonial">Testmonial</li>
-                <li class="navbar_menu__item" data-link="#contact">Contact</li>
-            </ul>
-        </div>
+      <div class="navbar__logo">
+        <i class="far fa-address-book"></i>
+        <a href="#">Meaya</a>
+      </div>
+      <div clase="navbar__menu__block">
+        <ul class="navbar__menu open">
+          <li class="navbar_menu__item" data-link="#home">Home</li>
+          <li class="navbar_menu__item" data-link="#about">About</li>
+          <li class="navbar_menu__item" data-link="#skill">Skill</li>
+          <li class="navbar_menu__item" data-link="#work">Work</li>
+          <li class="navbar_menu__item" data-link="#testimonial">Testmonial</li>
+          <li class="navbar_menu__item" data-link="#contact">Contact</li>
+        </ul>
+      </div>
 
-        <button class="navbar__toggle-btn">
-            <i class="fas fa-bars"></i>
-        </button>
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
 
     <!-- Home -->
     <section id="home">
-        <img 
-            src="imgs/myphoto.jpg" 
-            alt="Meaya's profile photo" 
-            class="home__avartar"><br/>
-        <h1 class="home__titile">Welcome <br/> Meaya's Portfolio</h1>
-        <h2 class="home__description">This is web site of my work history</h2>
-        <button class="home__contact" data-link="#contact">Contact me</button>
+      <img
+        src="imgs/myphoto.jpg"
+        alt="Meaya's profile photo"
+        class="home__avartar"
+      /><br />
+      <h1 class="home__titile">
+        Welcome <br />
+        Meaya(Miae SOHN)'s Portfolio
+      </h1>
+      <h2 class="home__description">This is web site of my work history</h2>
+      <button class="home__contact" data-link="#contact">Contact me</button>
     </section>
 
     <!-- About -->
     <section id="about" class="section section__container">
-        <h1>About Me</h1>
-        <p>My name is meaya. Programmer, and Acupuncturist
-        </p>
-        <div class="about__majors">
-            <div class="major" >
-                <div class="major__icon">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <h2 class="major__title">Front-end</h2>
-                <div class="major__description">
-                    HTML,CSS,JavaScript,TypeScript
-                    <br/>React, Vue, Web APIs, jQuery
-                </div>
-            </div>
-            <div class="major" >
-                <div class="major__icon">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <h2 class="major__title">Mobile</h2>
-                <div class="major__description">
-                    Embedded Programming, App program
-                </div>
-            </div>
-            <div class="major" >
-                <div class="major__icon">
-                    <i class="fas fa-server"></i>
-                </div>
-                <h2 class="major__title">Back-end</h2>
-                <div class="major__description">
-                    PHP, JAVA
-                </div>
-            </div>
+      <h1>About Me</h1>
+      <p>My name is meaya. Programmer, and Acupuncturist</p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">Front-end</h2>
+          <div class="major__description">
+            HTML,CSS,JavaScript,
+            <br />React, Vue, Web APIs, jQuery
+          </div>
         </div>
-        <div class="about__jobs">
-            <div class="job">
-                <img 
-                    src="imgs/parklaw.png" 
-                    alt="Jungbub" 
-                    class="job__log"
-                    width="100" height="100">
-                <div class="job__description">
-                    <p class="job__name">
-                        Legal office assistance
-                    </p>
-                    <p class="job__period">2016-2020 Park law firm  </p>
-                </div>
-            </div>
-
-            <div class="job">
-                <img 
-                src="imgs/no-image.png" 
-                alt="office manager" 
-                class="job__log"
-                width="100" height="100">
-                <div class="job__description">
-                    <p class="job__name">
-                        Production Manager
-                    </p>
-                    <p class="job__period">2014-2015 Montue Cloth company  </p>
-                </div>
-            </div>
-
-            <div class="job">
-                <img 
-                src="imgs/lim-acupuncture.png" 
-                alt="office manager" 
-                class="job__log"
-                width="100" height="100">
-                <div class="job__description">
-                    <p class="job__name">
-                        Office Manager
-                    </p>
-                    <p class="job__period">2011-2013 LIM acupuncture and herbs clinic </p>
-                </div>
-            </div>
-
-            <div class="job">
-                <img 
-                src="imgs/samsung.png" 
-                alt="Jungbub" 
-                class="job__log"
-                width="100" height="100">
-                <div class="job__description">
-                    <p class="job__name">
-                        Embedded Prgrammer
-                    </p>
-                    <p class="job__period">2001-2007 Samsung Eletronics </p>
-                </div>
-            </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h2 class="major__title">Mobile</h2>
+          <div class="major__description">
+            Embedded Programming, App program
+          </div>
         </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h2 class="major__title">Back-end</h2>
+          <div class="major__description">PHP, JAVA, Node JS</div>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img
+            src="imgs/parklaw.png"
+            alt="Jungbub"
+            class="job__log"
+            width="100"
+            height="100"
+          />
+          <div class="job__description">
+            <p class="job__name">Legal office assistance</p>
+            <p class="job__period">2016-2020 Park law firm</p>
+          </div>
+        </div>
+
+        <div class="job">
+          <img
+            src="imgs/no-image.png"
+            alt="office manager"
+            class="job__log"
+            width="100"
+            height="100"
+          />
+          <div class="job__description">
+            <p class="job__name">Production Manager</p>
+            <p class="job__period">2014-2015 Montue Cloth company</p>
+          </div>
+        </div>
+
+        <div class="job">
+          <img
+            src="imgs/lim-acupuncture.png"
+            alt="office manager"
+            class="job__log"
+            width="100"
+            height="100"
+          />
+          <div class="job__description">
+            <p class="job__name">Office Manager</p>
+            <p class="job__period">
+              2011-2013 LIM acupuncture and herbs clinic
+            </p>
+          </div>
+        </div>
+
+        <div class="job">
+          <img
+            src="imgs/samsung.png"
+            alt="Jungbub"
+            class="job__log"
+            width="100"
+            height="100"
+          />
+          <div class="job__description">
+            <p class="job__name">Embedded Prgrammer</p>
+            <p class="job__period">2001-2007 Samsung Eletronics</p>
+          </div>
+        </div>
+      </div>
     </section>
-
 
     <!-- Skill -->
     <section id="skill" class="section">
-        <div class="section__container">
-            <h1>Skill</h1>
-            <h2>Skill & Attribute </h2>
-            <p> My job skill are variety and broad</p>
+      <div class="section__container">
+        <h1>Skill</h1>
+        <h2>Skill & Attribute</h2>
+        <p>My job skill are variety and broad</p>
 
-            <div class="skillset">
-                <div class="skillset__left">
-                    <h3 class="skillset__title">Skills</h3>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>HTML</span>
-                            <span>99%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width:99%;"></div>
-                        </div>
-                        <div class="skill__description">
-                            <span>CSS</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"style="width:80%;"></div>
-                        </div>
-                        <div class="skill__description">
-                            <span>JavaScript</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width:70%;"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skillset__right">
-                    <div class="tools">
-                        <h3 class="skillset__title">Tools</h3>
-                        <ul class="tools__list">
-                            <li><span>Visual Studio Code</span></li>
-                            <li><span>Atom</span></li>
-                            <li><span>React</span></li>
-                            <li><span>Android Studio Code</span></li>
-                            <li><span>Sketch app</span></li>
-                        </ul>
-                    </div>
-                    <div class="etc">
-                        <h3 class="skillset__title">Etc</h3>
-                        <ul class="etc__list">
-                            <li><span>Git</span></li>
-                            <li><span>DMBS- Microsoft Access</span></li>
-                            <li><span>Health Related</span></li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>C, C++, JAVA</span>
+                <span>99%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 99%"></div>
+              </div>
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>99%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 99%"></div>
+              </div>
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 80%"></div>
+              </div>
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%"></div>
+              </div>
+              <div class="skill__description">
+                <span>PHP, Node JS, Python</span>
+                <span>50%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 50%"></div>
+              </div>
             </div>
+          </div>
+
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Atom</span></li>
+                <li><span>React</span></li>
+                <li><span>Android Studio Code</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+                <li><span>DMBS- Microsoft Access</span></li>
+                <li><span>Health Related</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Work -->
     <section id="work" class="section">
-        <div class="section__container">
-            <h1>My Work</h1>
-            <h3>Projects</h3>
-            <div class="work__categories">
-                <button class="category__btn selected" data-job="*">All<span class="category__count">8
-                </span></button>
-                <button class="category__btn" data-job="front">Front-end<span class="category__count">3
-                </span></button>
-                <button class="category__btn" data-job="end">Back-end<span class="category__count">1
-                </span></button>
-                <button class="category__btn" data-job="mobile">Mobile<span class="category__count">2
-                </span></button>
-            </div>
-            <div class="work__projects">
-                <a href="youtube.com" class="project" data-job="front" target="blank">
-                    <img class="project_img" src="imgs/projects/mobile_resize.jpg" alt="Youtube">
-                    <div class="project__description">
-                        <h3>Project 1</h3>
-                        <span>Youtube my channel</span>
-                    </div>
-                </a>
-
-                <a href="jungbub.com" class="project" data-job="front" target="blank">
-                    <img class="project_img" src="imgs/projects/hangmobile_resize.jpg" alt="Jungbub">
-                    <div class="project__description">
-                        <h3>Jungbub Site</h3>
-                        <span>Jungbub my channel</span>
-                    </div>
-                </a>
-
-                <a href="jungbub.com" class="project" data-job="end" target="blank">
-                    <img class="project_img" src="imgs/projects/hangmobile_resize.jpg" alt="Jungbub">
-                    <div class="project__description">
-                        <h3> Project 3</h3>
-                        <span>Jungbub my channel</span>
-                    </div>
-                </a>
-
-                <a href="youtube.com" class="project" data-job="front" target="blank">
-                    <img class="project_img" src="imgs/projects/mobile_resize.jpg" alt="Youtube">
-                    <div class="project__description">
-                        <h3>Project 4</h3>
-                        <span>Youtube my channel</span>
-                    </div>
-                </a>
-                
-                <a href="youtube.com" class="project" data-job="front" target="blank">
-                    <img class="project_img" src="imgs/projects/mobile_resize.jpg" alt="Youtube">
-                    <div class="project__description">
-                        <h3>Project 5</h3>
-                        <span>Youtube my channel</span>
-                    </div>
-                </a>
-                <a href="youtube.com" class="project" data-job="end" target="blank">
-                    <img class="project_img" src="imgs/projects/mobile_resize.jpg" alt="Youtube">
-                    <div class="project__description">
-                        <h3>Project 6</h3>
-                        <span>Youtube my channel</span>
-                    </div>
-                </a>
-                <a href="youtube.com" class="project" data-job="mobile" target="blank">
-                    <img class="project_img" src="imgs/projects/mobile_resize.jpg" alt="Youtube">
-                    <div class="project__description">
-                        <h3>Project 7</h3>
-                        <span>Youtube my channel</span>
-                    </div>
-                </a>
-            </div>
+      <div class="section__container">
+        <h1>My Work</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+          <button class="category__btn selected" data-job="*">
+            All<span class="category__count">8 </span>
+          </button>
+          <button class="category__btn" data-job="front">
+            Front-end<span class="category__count">3 </span>
+          </button>
+          <button class="category__btn" data-job="end">
+            Back-end<span class="category__count">1 </span>
+          </button>
+          <button class="category__btn" data-job="mobile">
+            Mobile<span class="category__count">2 </span>
+          </button>
         </div>
+        <div class="work__projects">
+          <a
+            href="https://github.com/meayasohn"
+            class="project"
+            data-job="front"
+            target="blank"
+          >
+            <img
+              class="project_img"
+              src="imgs/projects/front.jpg"
+              alt="project1"
+            />
+            <div class="project__description">
+              <h3>Project 1</h3>
+              <span>Project 1</span>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/meayasohn"
+            class="project"
+            data-job="front"
+            target="blank"
+          >
+            <img
+              class="project_img"
+              src="imgs/projects/front.jpg"
+              alt="front"
+            />
+            <div class="project__description">
+              <h3>Project 2</h3>
+              <span>Project 2</span>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/meayasohn"
+            class="project"
+            data-job="end"
+            target="blank"
+          >
+            <img class="project_img" src="imgs/projects/back.jpg" alt="back" />
+            <div class="project__description">
+              <h3>Project 3</h3>
+              <span>Project 3</span>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/meayasohn"
+            class="project"
+            data-job="front"
+            target="blank"
+          >
+            <img
+              class="project_img"
+              src="imgs/projects/front.jpg"
+              alt="front"
+            />
+            <div class="project__description">
+              <h3>Project 4</h3>
+              <span>Project 4</span>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/meayasohn"
+            class="project"
+            data-job="front"
+            target="blank"
+          >
+            <img
+              class="project_img"
+              src="imgs/projects/front.jpg"
+              alt="front"
+            />
+            <div class="project__description">
+              <h3>Project 5</h3>
+              <span>Project 5</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/meayasohn"
+            class="project"
+            data-job="end"
+            target="blank"
+          >
+            <img class="project_img" src="imgs/projects/back.jpg" alt="back" />
+            <div class="project__description">
+              <h3>Project 6</h3>
+              <span>Project 6</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/meayasohn"
+            class="project"
+            data-job="mobile"
+            target="blank"
+          >
+            <img
+              class="project_img"
+              src="imgs/projects/mobile.jpg"
+              alt="mobile"
+            />
+            <div class="project__description">
+              <h3>Project 7</h3>
+              <span>Project 7</span>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- Testmonial -->
     <section id="testimonial" class="section">
-        <div class="section__container">
-            <h1>Testimonials</h1>
+      <div class="section__container">
+        <h1>Testimonials</h1>
         <h3>See what they say about me</h3>
         <div class="testimonials">
-
-            <div class="testimonial_item">
-                <img 
-                    src="imgs/testimonials/sojisub_resize.jpg" 
-                    alt="Sojisub" 
-                    class="testimonial__avarta">
-                <div class="testimonial__speech-bubble">
-                    <p>work hard, always gentle</p>
-                    <p class="testimonial__name"><a href="">Alex</a> Italee optics</p>
-                </div>
+          <div class="testimonial_item">
+            <img
+              src="imgs/testimonials/alex.jpg"
+              alt="Alex"
+              class="testimonial__avarta"
+            />
+            <div class="testimonial__speech-bubble">
+              <p>
+                work hard, always gentle. She has a strong sense of
+                responsibility, so she always finish her job well.
+              </p>
+              <p class="testimonial__name"><a href="">Alex</a> Italee optics</p>
             </div>
+          </div>
 
-            <div class="testimonial_item">
-                <div class="testimonial__speech-bubble">
-                    <p>우리가 함께 하는 시간은 언제나 즐거웠다. 힘든 시간을 함께 할 수 있어서 언제나 든든했다.</p>
-                    <p class="testimonial__name">
-                        <a href="">Jia</a> Acupuncture Love Clinic </p>
-                </div>
-                <img 
-                    src="imgs/testimonials/sojisub_resize.jpg" 
-                    alt="Sojisub" 
-                    class="testimonial__avarta">
+          <div class="testimonial_item">
+            <div class="testimonial__speech-bubble">
+              <p>
+                우리가 함께 하는 시간은 언제나 즐거웠다. 힘든 시간을 함께 할 수
+                있어서 언제나 든든했다.
+              </p>
+              <p class="testimonial__name">
+                <a href="">Jia</a> Acupuncture Love Clinic
+              </p>
             </div>
-
+            <img
+              src="imgs/testimonials/jia.jpg"
+              alt="Jia"
+              class="testimonial__avarta"
+            />
+          </div>
         </div>
-        </div>
+      </div>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="section">
-            <h1 class="contact__title">Let's Talk</h1>
-            <h2 class="contact__email">westerneastcenter@gmail.com</h2>
-            <div class="contact__links">
-                <a href="https://github.com/meayasohn/Portfolio" target="_blank">
-                    <i class="fas fa-envelope-open-text"></i>
-                </a>
-                <a href="#" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-            <p class="contact__rights">
-                2020 Jungbub Wordbook copy right-All right reserved
-            </p>
+      <h1 class="contact__title">Let's Talk</h1>
+      <h2 class="contact__email">westerneastcenter@gmail.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/meayasohn/Portfolio" target="_blank">
+          <i class="fas fa-envelope-open-text"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <p class="contact__rights">
+        2020 Meaya, MiAe SOHN copy right-All right reserved
+      </p>
     </section>
 
     <!-- Arrow up -->
     <button class="arrow__up"><i class="fas fa-arrow-up"></i></button>
-</body>
+  </body>
 </html>
